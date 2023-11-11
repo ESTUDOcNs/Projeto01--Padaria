@@ -1,0 +1,163 @@
+﻿body {
+    background-color: GOLD;
+}
+
+.t1 {
+    width: 80%;
+    height: 5%;
+    background-color: black;
+
+    color: rgb(0, 0, 0);
+}
+
+table {
+    width: 100%;
+}
+
+#tb {
+    font-style: oblique;
+    background-color: rgb(249, 228, 202);
+}#th1{
+    background-color: rgb(244, 195, 136);
+}
+
+.t2 {
+    background-color: rgba(153, 255, 0, 0.226);
+    color: rgb(37, 37, 37);
+}
+
+#nome_da_padaria
+
+/*nome da padaria na tabela*/
+    {
+    background-color: rgb(246, 246, 26);
+    color: rgb(1, 1, 1);
+}
+
+.img
+
+/* imagem do logo*/
+    {
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    /*tentando centralizar a imagem do logo*/
+    border-radius: 50%;
+    padding-left: 30%;
+}
+
+.imcon
+
+/*para diminuir a imagem */
+    {
+    width: 40%;
+}
+
+#circulo
+
+/*para deixar a imagem redonda*/
+    {
+    border-radius: 50%;
+
+}
+
+.pao {
+    width: 60%;
+    border-radius: 50%;
+    padding: 10%;
+}
+
+.blo {
+    width: 40%;
+    border-radius: 50%;
+    padding: 20%;
+}
+
+div
+
+/* Aplicando estilo em todas as propriedades*/
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div
+
+/*Aplicando no elemento Pai*/
+    {
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+}
+
+.div div:nth-child(1),
+.div div:nth-child(2)
+
+/* para nao precisar colocar muitas classes usamos essa PSEDO_CLASSE*/
+    {
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #ec66009e;
+    color: #200a3f;
+
+}
+
+.btm
+
+/* position:absolute para que o btm fique sempre por cima do bg*/
+    {
+    animation: btm 2s infinite;
+    position: absolute;
+    z-index: 1;padding: 10px,2px,5px,25px;
+}
+
+.bg
+
+/*opacidade 50% assim fica mais visível o efeito*/
+    {
+    animation: bg 2s infinite;
+    opacity: .5;
+}
+
+@keyframes btm {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.05);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bg {
+    10% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0;
+        height: 60px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.price {
+    background-color: rgba(210, 125, 64, 0.79);
+    border-radius: 50%;
+    padding: 10px;
+}.topo{
+    background-color: rgba(255, 127, 80, 0.811);border-radius: 50px;color: white;
+}#atopo{
+    color: azure;font-size: larger;
+}
